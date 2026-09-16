@@ -1,6 +1,7 @@
-"use client";
+'use client';
 import { useState, useEffect } from "react";
-import { Terminal, Menu, X, Sparkles } from "lucide-react";
+import { Terminal, Menu, X, Sparkles, Download } from "lucide-react";
+import { PROFILE } from "../data/portfolioData";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -17,6 +18,7 @@ export default function Navbar() {
   const navLinks = [
     { label: "Flagship SaaS", href: "#flagship" },
     { label: "Systems", href: "#systems" },
+    { label: "Experience", href: "#experience" },
     { label: "Architecture", href: "#architecture" },
     { label: "Services", href: "#services" },
     { label: "Contact", href: "#contact" },
@@ -41,17 +43,17 @@ export default function Navbar() {
               Mohamed Esam
               <span className="inline-block w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
             </div>
-            <p className="text-[11px] font-mono text-zinc-400">Full-Stack • AI Systems</p>
+            <p className="text-[11px] font-mono text-zinc-400">Software Engineer</p>
           </div>
         </a>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-1 bg-zinc-900/60 border border-zinc-800/70 rounded-full px-4 py-1.5 backdrop-blur-md shadow-inner">
+        <nav className="hidden lg:flex items-center gap-1 bg-zinc-900/60 border border-zinc-800/70 rounded-full px-4 py-1.5 backdrop-blur-md shadow-inner">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="text-xs font-medium text-zinc-300 hover:text-white px-3.5 py-1.5 rounded-full hover:bg-zinc-800/60 transition-colors"
+              className="text-xs font-medium text-zinc-300 hover:text-white px-3 py-1.5 rounded-full hover:bg-zinc-800/60 transition-colors"
             >
               {link.label}
             </a>
@@ -59,14 +61,18 @@ export default function Navbar() {
         </nav>
 
         {/* Action Button & Status */}
-        <div className="hidden md:flex items-center gap-3">
-          <div className="hidden lg:flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/50 border border-emerald-500/30 text-emerald-400 text-[11px] font-mono">
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping" />
-            Open for Contracts
-          </div>
+        <div className="hidden md:flex items-center gap-2.5">
+          <a
+            href={PROFILE.resumeUrl}
+            download="Mohamed_Esam_Resume.pdf"
+            className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 text-zinc-200 text-xs font-medium transition-all"
+          >
+            <Download className="w-3.5 h-3.5 text-emerald-400" />
+            CV
+          </a>
           <a
             href="#contact"
-            className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-zinc-950 font-semibold text-xs tracking-tight shadow-lg shadow-emerald-500/20 hover:shadow-emerald-500/30 transition-all"
+            className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-zinc-950 font-semibold text-xs tracking-tight shadow-lg shadow-emerald-500/20 transition-all"
           >
             <Sparkles className="w-3.5 h-3.5" />
             Let's Talk
@@ -76,7 +82,7 @@ export default function Navbar() {
         {/* Mobile menu trigger */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="md:hidden p-2 rounded-lg bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-white"
+          className="lg:hidden p-2 rounded-lg bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-white"
           aria-label="Toggle Menu"
         >
           {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -85,7 +91,7 @@ export default function Navbar() {
 
       {/* Mobile dropdown */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-zinc-950/95 border-b border-zinc-800 px-4 pt-3 pb-6 space-y-3 backdrop-blur-2xl">
+        <div className="lg:hidden bg-zinc-950/95 border-b border-zinc-800 px-4 pt-3 pb-6 space-y-3 backdrop-blur-2xl">
           <div className="flex flex-col space-y-2">
             {navLinks.map((link) => (
               <a
@@ -99,6 +105,13 @@ export default function Navbar() {
             ))}
           </div>
           <div className="pt-3 border-t border-zinc-800 flex flex-col gap-2.5">
+            <a
+              href={PROFILE.resumeUrl}
+              download="Mohamed_Esam_Resume.pdf"
+              className="text-center py-2 rounded-xl bg-zinc-900 border border-zinc-800 text-zinc-200 text-xs font-medium"
+            >
+              Download CV (PDF)
+            </a>
             <a
               href="#contact"
               onClick={() => setMobileMenuOpen(false)}

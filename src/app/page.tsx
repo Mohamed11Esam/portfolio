@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import SmartCoachShowcase from "@/components/SmartCoachShowcase";
 import FeaturedProjects from "@/components/FeaturedProjects";
+import Experience from "@/components/Experience";
 import SystemArchitecture from "@/components/SystemArchitecture";
 import Services from "@/components/Services";
 import ContactSection from "@/components/ContactSection";
@@ -15,6 +16,7 @@ export default function Home() {
         <Hero />
         <SmartCoachShowcase />
         <FeaturedProjects />
+        <Experience />
         <SystemArchitecture />
         <Services />
         <ContactSection />
