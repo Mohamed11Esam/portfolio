@@ -105,7 +105,7 @@ export default function Hero() {
                     <span className="w-3 h-3 rounded-full bg-rose-500/80 inline-block" />
                     <span className="w-3 h-3 rounded-full bg-amber-500/80 inline-block" />
                     <span className="w-3 h-3 rounded-full bg-emerald-500/80 inline-block" />
-                    <span className="text-xs font-mono text-zinc-400 ml-2 font-medium">smartcoach-ai.koyeb.app</span>
+                    <span className="text-xs font-mono text-zinc-400 ml-2 font-medium">apex-athletic-beta.vercel.app</span>
                   </div>
                   <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-emerald-950/80 border border-emerald-500/40 text-emerald-400 flex items-center gap-1">
                     <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />

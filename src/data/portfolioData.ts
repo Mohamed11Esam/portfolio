@@ -96,7 +96,6 @@ export const FLAGSHIP_PROJECT = {
   description: "A modular, commercial-grade fitness platform featuring an AI coaching engine powered by FastAPI and RAG architecture, dual web applications (Athlete Client Portal + Executive Admin Dashboard), and an event-driven Dockerized Node backend.",
   liveClientUrl: "https://apex-athletic-beta.vercel.app",
   liveDashboardUrl: "https://smart-coach-dashboard.vercel.app",
-  backendDeployUrl: "https://exact-gwenette-fitglow-38dc47eb.koyeb.app",
   githubClient: "https://github.com/Mohamed11Esam/SmartCoachFront",
   githubBackend: "https://github.com/Mohamed11Esam/SmartCoachBack",
   githubAI: "https://github.com/Mohamed11Esam/SmartCoachAI",
@@ -119,7 +118,6 @@ export const FLAGSHIP_PROJECT = {
     {
       name: "Core Backend Service",
       badge: "Node.js • TypeScript • Docker • Koyeb",
-      url: "https://exact-gwenette-fitglow-38dc47eb.koyeb.app",
       status: "Live on Koyeb",
       description: "Production RESTful API handling JWT authentication, Stripe subscription webhooks, Cloudinary media storage, and MongoDB persistence."
     },
