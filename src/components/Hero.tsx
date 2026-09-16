@@ -127,7 +127,7 @@ export default function Hero() {
                       Apex Athletic Portal & Analytics
                     </div>
                     <p className="text-xs text-zinc-400 mt-1">
-                      Dynamic biometrics charts, real-time Socket.io coach messages, and Gemini AI RAG meal generation.
+                      Dynamic biometrics charts, real-time Socket.io coach messages, and AI RAG meal and workout generation.
                     </p>
                   </div>
 
@@ -146,7 +146,7 @@ export default function Hero() {
                         <Bot className="w-3.5 h-3.5 text-cyan-400" />
                         AI RAG Microservice
                       </div>
-                      <div className="text-sm font-bold text-white font-mono">Gemini 1.5 Pro</div>
+                      <div className="text-sm font-bold text-white font-mono">FastAPI RAG</div>
                       <div className="text-[11px] text-cyan-400">Contextual Ingestion</div>
                     </div>
                   </div>
@@ -185,7 +185,7 @@ export default function Hero() {
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 pt-10 border-t border-zinc-800/80">
           {[
             { label: "Frontend Engineering", value: "React 19 • Next.js" },
-            { label: "AI RAG Integrations", value: "Gemini + FastAPI" },
+            { label: "AI RAG Integrations", value: "FastAPI • LLMs • RAG" },
             { label: "Backend Architecture", value: "Node • NestJS • Prisma" },
             { label: "Production Deploys", value: "4+ Live Cloud Apps" },
           ].map((metric, i) => (

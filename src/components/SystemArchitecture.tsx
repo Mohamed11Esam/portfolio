@@ -22,7 +22,7 @@ export default function SystemArchitecture() {
     },
     {
       role: "AI & RAG Engine",
-      name: "FastAPI + Google Gemini",
+      name: "FastAPI + LLM RAG Engine",
       details: "Vector search over contextual embeddings, intelligent nutrition/workout plan generation.",
       icon: <Bot className="w-5 h-5 text-purple-400" />
     },

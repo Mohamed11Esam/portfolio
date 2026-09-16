@@ -55,7 +55,7 @@ export const PROFILE = {
   ],
   metrics: [
     { label: "Frontend Engineering", value: "React 19 • Next.js" },
-    { label: "AI RAG Integrations", value: "Gemini + FastAPI" },
+    { label: "AI RAG Integrations", value: "FastAPI • LLMs • RAG" },
     { label: "Enterprise Systems", value: "Frappe • ERPNext • NestJS" },
     { label: "Production Deploys", value: "4+ Live Cloud Apps" },
   ]
@@ -93,7 +93,7 @@ export const FLAGSHIP_PROJECT = {
   id: "apex-athletic",
   title: "Smart Coach - AI Fitness Platform",
   headline: "Full-Stack AI Fitness & Nutrition Ecosystem",
-  description: "A modular, commercial-grade fitness platform featuring an AI coaching engine powered by FastAPI and Gemini RAG, dual web applications (Athlete Client Portal + Executive Admin Dashboard), and an event-driven Dockerized Node backend.",
+  description: "A modular, commercial-grade fitness platform featuring an AI coaching engine powered by FastAPI and RAG architecture, dual web applications (Athlete Client Portal + Executive Admin Dashboard), and an event-driven Dockerized Node backend.",
   liveClientUrl: "https://apex-athletic-beta.vercel.app",
   liveDashboardUrl: "https://smart-coach-dashboard.vercel.app",
   backendDeployUrl: "https://exact-gwenette-fitglow-38dc47eb.koyeb.app",
@@ -125,13 +125,13 @@ export const FLAGSHIP_PROJECT = {
     },
     {
       name: "AI & RAG Microservice",
-      badge: "FastAPI • Python • Gemini • Vector Search",
+      badge: "FastAPI • Python • LLM RAG • Vector Search",
       status: "FastAPI Inference",
-      description: "Intelligent inference engine using Google Gemini and contextual fitness embeddings to generate personalized meal and workout regimes via 7 dedicated endpoints."
+      description: "Intelligent inference engine using contextual vector embeddings and LLM reasoning to generate personalized meal and workout regimes via 7 dedicated endpoints."
     }
   ],
   features: [
-    "Contextual RAG Inference with Google Gemini",
+    "Contextual RAG Inference with Vector Search & LLMs",
     "Real-time biometrics analytics powered by Recharts",
     "Stripe checkout sessions & webhook fulfillment",
     "Dockerized container builds on Koyeb Edge Infrastructure",
@@ -214,14 +214,14 @@ export const SERVICES: Service[] = [
     id: "ai-rag",
     title: "AI & RAG Solutions",
     subtitle: "Turn company data into intelligent chatbots & workflows",
-    description: "I build bespoke AI microservices utilizing FastAPI, vector embeddings, and LLMs (Google Gemini / OpenAI) to automate client support, document analysis, and dynamic recommendations.",
+    description: "I build bespoke AI microservices utilizing FastAPI, vector embeddings, and Custom LLMs & Vector Databases to automate client support, document analysis, and dynamic recommendations.",
     deliverables: [
       "Custom RAG vector search over your company PDFs/documents",
       "Conversational AI chat widgets with memory & source citations",
       "FastAPI microservice containerized with Docker",
       "Strict token limiters and cost optimization"
     ],
-    tech: ["FastAPI", "Python", "Google Gemini", "LangChain/RAG", "Vector DBs"],
+    tech: ["FastAPI", "Python", "LLMs", "LangChain/RAG", "Vector DBs"],
     idealFor: "SaaS founders, e-commerce stores, and startups seeking AI automation."
   },
   {
